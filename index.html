@@ -10,6 +10,10 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <main>
@@ -166,6 +170,20 @@
             </div>
           </div>
         </div>
+        <!-- Botón "Subir arriba" -->
+        <button
+          onclick="scrollToTop()"
+          class="btn btn-primary position-fixed bottom-0 end-0 m-4 py-2 px-2 rounded-circle shadow"
+        >
+          <i class="bi bi-arrow-up fs-4 text-white"></i>
+        </button>
+
+        <!-- Script para hacer scroll suave hacia arriba -->
+        <script>
+          function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }
+        </script>
 
         <footer class="pt-3 mt-4 text-body-secondary border-top">© 2025</footer>
       </div>
